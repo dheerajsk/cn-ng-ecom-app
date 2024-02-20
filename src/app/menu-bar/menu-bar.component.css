@@ -1,7 +1,14 @@
 
 .menu{
-    background-color: #333;
     overflow: hidden;
+}
+
+.bg_yellow{
+    background-color: yellow;
+}
+
+.bg_red{
+    background-color: red;
 }
 
 .menu-item{

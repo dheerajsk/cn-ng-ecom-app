@@ -5,3 +5,6 @@ Header[Logo, name, login/logout]
 MenuBar[Home, Clothing, Electronics]
 Home[Products]
 ProductCard [Name, image, price, availability]
+
+Directives
+ngClass, ngStyles
