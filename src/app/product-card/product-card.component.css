@@ -1,0 +1,16 @@
+
+.product-img{
+    height: 320px;
+}
+
+.product-card{
+    margin: 12px;
+}
+
+a{
+    text-decoration: none;
+}
+
+svg{
+    color: orange;
+}
