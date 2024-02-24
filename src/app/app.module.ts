@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +17,7 @@ import { BrowserModule } from '@angular/platform-browser';
     RouterOutlet,
     HeaderComponent,
     MenuBarComponent,
-    HomeComponent,
+    HomeModule,
     HeaderCarouselComponent,
   ],
   providers: [],
