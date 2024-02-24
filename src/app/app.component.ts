@@ -7,14 +7,6 @@ import { HeaderCarouselComponent } from './header-carousel/header-carousel.compo
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    HeaderComponent,
-    MenuBarComponent,
-    HomeComponent,
-    HeaderCarouselComponent,
-  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
