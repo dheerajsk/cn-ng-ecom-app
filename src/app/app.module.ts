@@ -10,10 +10,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HomeModule } from './home/home.module';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CartModule } from './cart/cart.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, CommonModule, RouterOutlet, HomeModule, CartModule],
+  imports: [
+    BrowserModule,
+    CommonModule,
+    RouterOutlet,
+    HomeModule,
+    CartModule,
+    AuthModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
