@@ -1,16 +1,7 @@
 <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/D103625178_DesktopTallHero_3000x1200._CB574597993_.jpg"
-                class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/jan24atf/unrec/citi/pc_2x._CB584618827_.jpg"
-                class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/2024/Gateway/February/Unrec/PC_3000_4._CB581367587_.jpg"
-                class="d-block w-100" alt="...">
+        <div *ngFor="let url of urls; let i=index" class="carousel-item" [ngClass]="i==0 ? 'active':''">
+            <img [src]="url" class="d-block w-100" alt="...">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
