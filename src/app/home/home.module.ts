@@ -7,6 +7,7 @@ import { FooterComponent } from '../shared/footer/footer.component';
 import { HeaderCarouselComponent } from './header-carousel/header-carousel.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { SharedModule } from '../shared/shared.module';
+import { ProductRatingComponent } from './product-rating/product-rating.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SharedModule } from '../shared/shared.module';
     ProductCardComponent,
     MenuBarComponent,
     HeaderCarouselComponent,
+    ProductRatingComponent
   ],
   imports: [CommonModule, SharedModule],
   exports: [HomeComponent],
