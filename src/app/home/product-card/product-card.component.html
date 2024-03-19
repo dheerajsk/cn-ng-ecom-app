@@ -1,12 +1,9 @@
 <a href="#">
     <div class="card product-card" style="width: 18rem;">
-        <img src="https://m.media-amazon.com/images/I/41uGjvXbeBL._AC_SR400,600_.jpg" class="card-img-top product-img"
-            alt="...">
+        <img [src]="product.imageUrl" class="card-img-top product-img" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Universal Travel Adapter</h5>
-            <p class="card-text">rts Universal Travel Adapter, International All in One Worldwide Travel Adapter and
-                Wall
-                Charger with USB Ports with Multi Type Power Outlet USB 2.1A,100-250 Voltage Travel Charger (Black)</p>
+            <h5 class="card-title">{{product.title}}</h5>
+            <p class="card-text">{{product.description}}</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
                 viewBox="0 0 16 16">
                 <path
