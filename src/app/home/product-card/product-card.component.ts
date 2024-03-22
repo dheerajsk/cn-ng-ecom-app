@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'product-card',
@@ -7,4 +7,14 @@ import { Component, Input } from '@angular/core';
 })
 export class ProductCardComponent {
   @Input('item') product: any;
+  @Output() onAddToCart!: EventEmitter<any>;
+
+  constructor() {
+    this.onAddToCart = new EventEmitter();
+  }
+
+  handleAddToCart() {
+    this.onAddToCart.emit(this.product.id);
+  }
 }
+// Home-> Header-> Cart> Button

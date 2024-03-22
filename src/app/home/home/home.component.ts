@@ -90,4 +90,8 @@ export class HomeComponent {
       rating: 3.1,
     },
   ];
+
+  handleAddToCartEvent(productId: string) {
+    console.log('Ok, I will add it to the cart', productId);
+  }
 }

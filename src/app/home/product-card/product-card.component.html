@@ -1,10 +1,9 @@
-<a href="#">
-    <div class="card product-card" style="width: 18rem;">
-        <img [src]="product.imageUrl" class="card-img-top product-img" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{product.title}}</h5>
-            <p class="card-text">{{product.description}}</p>
-            <product-rating [rating]="product.rating"></product-rating>
-        </div>
+<div class="card product-card" style="width: 18rem;">
+    <img [src]="product.imageUrl" class="card-img-top product-img" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">{{product.description}}</p>
+        <product-rating [rating]="product.rating"></product-rating>
+        <button class="btn btn-success" (click)="handleAddToCart()">Add To Cart</button>
     </div>
-</a>
+</div>
